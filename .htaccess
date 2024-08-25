@@ -1,0 +1,27 @@
+# RewriteEngine On
+
+# # Redirect localhost to home page
+# RewriteRule ^$ index.php [L]
+
+# # Remove .php extension
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# RewriteRule ^(.*)$ $1.php [L]
+
+# # Cache control for images
+# <FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+#     Header set Cache-Control "max-age=604800, public"
+# </FilesMatch>
+
+# # Rewrite for index.php
+# RewriteRule ^speakwell-nagpur-the-best-spoken-english-classes$ index.php [L]
+
+# # Rewrite for contactUs.php
+# RewriteRule ^speakwell-top-english-coaching-institute$ contactUs.php [L]
+
+# # Rewrite for login.php
+# RewriteRule ^speakwell-login$ login.php [L]
+
+# # Rewrite for admin_index.php and admin_image.php
+# RewriteRule ^admin_index$ admin_index.php [L]
+# RewriteRule ^admin_image$ admin_image.php [L]

@@ -1,0 +1,112 @@
+/* General Header Styles */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #00b9ad;
+    z-index: 1000;
+    font-family: sans-serif; /* Replace 'sans-serif' with your desired font */
+}
+
+/* Adjust padding for main content to account for the fixed header */
+.main-content {
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+/* Logo Styles */
+.navbar .logo a {
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 250px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Links Styles */
+.navbar .links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px;
+}
+
+.navbar .links a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 0;
+    transition: color 0.2s ease;
+}
+
+.navbar .links a:hover {
+    color: #ffffff;
+}
+
+/* Hamburger Menu Styles */
+#menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+#hamburger-btn {
+    font-size: 1.8rem;
+    color: #000000;
+    cursor: pointer;
+    display: none; /* Hide by default, show on mobile */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 1023px) {
+    #hamburger-btn {
+        display: block; /* Show hamburger button on mobile */
+    }
+
+    .links {
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        width: 100%;
+        height: 100vh;
+        padding-top: 50px;
+        background: #ffffff;
+        flex-direction: column;
+        transition: left 0.3s ease;
+        z-index: 9; /* Ensure menu appears above other elements */
+    }
+
+    #menu-toggle:checked ~ .links {
+        left: 0;
+        display: flex;
+    }
+
+    .navbar .links a {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Additional Styles */
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.body-section {
+    margin-top: 20px;
+}
