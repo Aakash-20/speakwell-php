@@ -39,7 +39,7 @@ mysqli_close($con);
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" id="hamburger-btn">&#9776;</label>
             <ul class="links">
-              <li><a href="/">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="index.php#keyfactor">Key Factors</a></li>
               <li><a href="index.php#gallery">Gallery</a></li>
               <li><a href="index.php#blog">Blogs</a></li>

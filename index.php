@@ -70,12 +70,12 @@ $images = mysqli_fetch_all($result, MYSQLI_ASSOC);
             <input type="checkbox" id="menu-toggle" />
             <label for="menu-toggle" id="hamburger-btn">&#9776;</label>
             <ul class="links">
-    <li><a href="speakwell-nagpur-the-best-spoken-english-classes">Home</a></li>
-    <li><a href="speakwell-nagpur-the-best-spoken-english-classes#keyfactor">Key Factors</a></li>
-    <li><a href="speakwell-nagpur-the-best-spoken-english-classes#gallery">Gallery</a></li>
-    <li><a href="speakwell-nagpur-the-best-spoken-english-classes#blog">Blogs</a></li>
-    <li><a href="speakwell-nagpur-the-best-spoken-english-classes#about">About Us</a></li>
-    <li><a href="speakwell-top-english-coaching-institute">Contact Us</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="#keyfactor">Key Factors</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#blog">Blogs</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="contactUs.php">Contact Us</a></li>
 </ul>
 
           </nav>
@@ -1077,7 +1077,7 @@ $(document).ready(function() {
      var links = document.querySelectorAll('.sl--link');
     links.forEach(function(link) {
         link.addEventListener('click', function() {
-            window.location.href = "/best-spoken-english-classes-in-Nagpur"; // Redirect to the Contact Us page
+            window.location.href = "contactUs.php"; // Redirect to the Contact Us page
         });
     });
 });
